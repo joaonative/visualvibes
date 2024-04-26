@@ -30,7 +30,7 @@ const NavItem = ({
   return (
     <Link
       to={path}
-      className={`rounded px-3 py-2 flex items-center gap-2 font-bold text-xl ${
+      className={`w-max md:w-full rounded px-3 py-2 flex items-center gap-2 font-bold text-xl ${
         isActive
           ? highlighted
             ? "bg-gradient-to-r from-primary to-secondary text-white"
@@ -39,7 +39,7 @@ const NavItem = ({
       }`}
     >
       {isActive ? activeIcon : inactiveIcon}
-      {name}
+      <p className="hidden md:block">{name}</p>
     </Link>
   );
 };

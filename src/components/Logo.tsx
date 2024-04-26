@@ -3,9 +3,9 @@ import Cube from "./icons/Cube";
 
 const Logo = () => {
   return (
-    <span className="flex items-center gap-1">
+    <span className="flex justify-center md:items-center md:justify-normal md:gap-1">
       <Cube color="primary" size={32} />
-      <p className="text-transparent bg-clip-text font-bold text-2xl bg-gradient-to-r from-primary to-secondary">
+      <p className="hidden md:block text-transparent bg-clip-text font-bold text-2xl bg-gradient-to-r from-primary to-secondary">
         {APP_NAME}
       </p>
     </span>

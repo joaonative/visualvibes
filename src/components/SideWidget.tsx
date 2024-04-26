@@ -1,7 +1,5 @@
-import React from "react";
-
 const SideWidget = () => {
-  return <aside>SideWidget</aside>;
+  return <aside className="hidden md:flex">SideWidget</aside>;
 };
 
 export default SideWidget;

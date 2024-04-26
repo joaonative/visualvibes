@@ -8,7 +8,7 @@ interface Props {
 const Nav = ({ name, children }: Props) => {
   return (
     <nav className="flex flex-col gap-1">
-      <h3 className="font-normal text-base">{name}</h3>
+      <h3 className="hidden md:block font-normal text-base">{name}</h3>
       <div className="flex flex-col gap-2">{children}</div>
     </nav>
   );
