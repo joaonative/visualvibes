@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         nunito: ["'Nunito', sans-serif"],
       },
+      screens: {
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [],

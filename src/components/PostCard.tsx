@@ -26,7 +26,7 @@ const PostCard = ({ post }: Props) => {
               alt=""
               width={32}
               height={32}
-              className="h-6 w-6 xl:h-8 xl:w-8 rounded-full object-cover"
+              className="h-6 w-6 xl:h-8 xl:w-8 3xl:w-10 3xl:h-10 rounded-full object-cover"
             />
             {post.authorName}
           </Link>

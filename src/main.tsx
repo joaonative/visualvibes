@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <div className="flex font-nunito h-screen text-dark overflow-hidden">
           <SideBar />
-          <div className="flex-grow flex px-3 md:px-12 xl:px-20 pt-3 md:pt-6 gap-3 md:gap-6">
+          <div className="flex-grow flex px-3 md:px-12 xl:px-20 3xl:px-60 pt-3 md:pt-6 gap-3 md:gap-6">
             <main className="flex-grow overflow-y-scroll pb-6">
               <Routes>
                 <Route path="/" element={<Feed />} />

@@ -1,4 +1,7 @@
+import { useState } from "react";
+import Button from "../components/Button";
 import PostList from "../components/PostList";
+import SearchInput from "../components/SearchInput";
 
 const posts: Post[] = [
   {
@@ -59,7 +62,39 @@ const posts: Post[] = [
 ];
 
 const Feed = () => {
-  return <PostList posts={posts} />;
+  const [forYou, setForYou] = useState<boolean>(true);
+  const [following, setFollowing] = useState<boolean>(false);
+
+  const handleFilterFy = () => {
+    setForYou(true);
+    setFollowing(false);
+  };
+
+  const handleFilterFollowing = () => {
+    setFollowing(true);
+    setForYou(false);
+  };
+
+  return (
+    <section className="flex flex-col gap-4">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <Button primary={forYou} normal={!forYou} onClick={handleFilterFy}>
+            Para Você
+          </Button>
+          <Button
+            primary={following}
+            normal={!following}
+            onClick={handleFilterFollowing}
+          >
+            Seguindo
+          </Button>
+        </div>
+        <SearchInput name="searchArtist" searchFn={(t) => console.log(t)} />
+      </div>
+      <PostList posts={posts} />
+    </section>
+  );
 };
 
 export default Feed;

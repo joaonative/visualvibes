@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 interface Props {
   user: User;
 }
 
 const UserCard = ({ user }: Props) => {
   return (
-    <div className="flex flex-col bg-layer rounded p-3">
+    <Link to={`/profile`} className="flex flex-col bg-layer rounded p-4">
       <div className="-space-y-8 flex flex-col items-center">
         <img
           src={user.backgroundImageUrl}
@@ -41,7 +43,7 @@ const UserCard = ({ user }: Props) => {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
