@@ -1,7 +1,11 @@
-import React from "react";
+import Logo from "./Logo";
 
 const SideBar = () => {
-  return <aside>SideBar</aside>;
+  return (
+    <aside>
+      <Logo />
+    </aside>
+  );
 };
 
 export default SideBar;
