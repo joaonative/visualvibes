@@ -2,14 +2,14 @@
 
 import Icon from "../../assets/cube-outline.svg?react";
 interface Props {
-  color: "primary" | string;
+  color?: "primary" | string;
   size: number;
 }
 
 const Cube = ({ color, size }: Props) => {
   return (
     <Icon
-      fill={color === "primary" ? "#3A3077" : color}
+      fill={color && color === "primary" ? "#3A3077" : color}
       width={`${size}px`}
       height={`${size}px`}
     />

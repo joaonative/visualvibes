@@ -13,9 +13,9 @@ import SideWidget from "./components/SideWidget.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="flex w-screen min-h-screen font-nunito">
+      <div className="flex w-screen min-h-screen font-nunito text-dark">
         <SideBar />
-        <div className="flex-grow flex px-20 gap-6">
+        <div className="flex-grow flex px-20 py-6 gap-6">
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Feed />} />
