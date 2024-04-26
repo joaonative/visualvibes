@@ -10,7 +10,7 @@ import NavItem from "./NavItem";
 
 const SideBar = () => {
   return (
-    <aside className="flex flex-col md:gap-6 gap-3 p-3 md:p-6 border-r-2 md:border-r-4 border-layer">
+    <aside className="flex flex-col md:gap-6 gap-3 p-3 md:p-6 border-r-2 md:border-r-4 border-layer sticky top-0 h-screen">
       <Logo />
       <div className="h-full flex flex-col justify-between">
         <div className="flex flex-col gap-6">
